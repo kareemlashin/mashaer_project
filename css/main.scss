@@ -510,7 +510,7 @@
   #close {
     display: none !important
   }
-  @media(min-width: 1px) and(max-width: 768px) {
+  @media(min-width:1px) and (max-width:768px) {
     .img-back {
         top: -10% !important;
         z-index: 1
@@ -533,15 +533,16 @@
         display: none !important
     }
     #small-bar {
-        display: block !important
+        display: block !important;
+
     }
     main {
         width: 100% !important
     }
     aside {
         z-index: 88888;
-        width: 40% !important;
-        right: -40% !important
+        width: 40% ;
+        right: -40% 
     }
   }
   @media(min-width: 1px) and(max-width: 767px) {
@@ -549,9 +550,9 @@
         width: 100% !important
     }
     aside {
-        z-index: 88888 !important;
-        width: 80% !important;
-        right: -80% !important
+        z-index: 88888 ;
+        width: 80% ;
+        right: -80% ;
     }
   }
   @media(min-width: 1px) and(max-width: 767px) {
@@ -856,7 +857,8 @@
     padding-bottom: 15px
   }
   input[type="date"] {
-    color: #0373BF !important
+    color: #0373BF !important;
+    padding-left: 5px;
   }
   input[type="date"]::-webkit-calendar-picker-indicator {
     background: transparent;
@@ -1188,9 +1190,9 @@
   @media(min-width:500px)and (max-width:768px){
     
     aside{
-        width: 40% !important;
+        width: 40% ;
         right: -80%;
-        z-index:999999999 !important;
+        z-index:999999999 ;
     }
     main{
         width: 100% !important;
@@ -1231,9 +1233,9 @@
   }
   @media(max-width:767px){
     aside{
-        width: 80% !important;
+        width: 80% ;
         right: -80%;
-        z-index:999999999 !important;
+        z-index:999999999 ;
     }
     main{
         width: 100% !important;
@@ -1301,4 +1303,106 @@
         font-size: 12px !important;
     }
   }
+  .paypal-button.paypal-button-color-black, .paypal-button-row.paypal-button-color-black .menu-button{
+    background-color: #0373BF !important;
+  }
+  .paypal-button.paypal-button-color-black, .paypal-button-row.paypal-button-color-black .menu-button{
+    background: #0373BF !important;
+
+  }
+  .fancy-options{
+    width: 100% !important;
+    
+    list-style-type: disc;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0px;
+    li{
+      display: inline-block;
+      margin-top: 5px;
+      margin-right: 15px;
+      margin-bottom: 5px;
+      margin-left: 15px;
+      width: 30% !important;
+
+    }
+    input[type=radio]{
+      display:none;
+      ~label{
+        cursor: pointer;
+        width:100%;
+        background:transparent;
+        border: 2px solid #0373BF;
+        color: #0373BF;
+        padding:0.5em 1em;
+        font-weight: 600;
+        border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+      }
+      &:checked{
+        ~label{
+          background:#0373BF;
+          color: #fff;
+          &:after{
+            background-color: #0373BF;
+            padding: 0.3em;
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 767px) and (min-width: 1px) {
   
+    .fancy-options{
+      
+    list-style-type: disc;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0px;
+      li{
+        margin-top: 0px !important;
+        margin-right: 5px !important;
+        margin-bottom: 5px !important;
+        margin-left: 0px !important;
+        width:calc(100% - 10px)  !important;
+      }}
+  }
+
+  
+  @media (max-width: 1024px) and (min-width: 767px) {
+  
+    .fancy-options{
+      
+    list-style-type: disc;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0px;
+      li{
+        margin-top: 0px !important;
+        margin-right: 10px !important;
+        margin-bottom: 10px !important;
+        margin-left: 0px !important;
+        width:calc(32% - 10px)  !important;
+      }}
+  }
+  .paypal__button{
+    display: none;
+  }
+  *{
+    outline: none !important;
+  }
+
+  .paypal-button.paypal-button-color-black, .paypal-button-row.paypal-button-color-black .menu-button{
+    background-color: #0373BF !important;
+    background: #0373BF !important;
+}
